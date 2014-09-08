@@ -3,9 +3,6 @@ HOMEPAGE = "http://www.mumudvb.net"
 SECTION = "multimedia"
 LICENSE = "GPLv2 "
 
-# dvb-apps - allows a user to scan for channel information, etc.
-RRECOMMENDS_${PN} = "dvb-apps"
-
 inherit autotools pkgconfig
 
 SRC_URI = "${@get_mumudvb_srcuri(d)}"
